@@ -1,0 +1,121 @@
+<div class="timeline">
+    <div class="timelineContainer left">
+      <div class="content">
+        <h2 class="ff fw-600 fs-36 c-white ph-32-sm">Phase-1</h2>
+        <p class="ff fw-400 fs-18 fc-white">Massa pellentesque sagittis
+          Aliquam sed in odio.
+          Turpis blandit at interdum
+          Eget tempus nulla tempus arcu.</p>
+      </div>
+    </div>
+    <div class="timelineContainer right">
+      <div class="content">
+        <h2 class="ff fw-600 fs-36 c-white ph-32-sm">Phase-2</h2>
+        <p class="ff fw-400 fs-18 fc-white">Massa pellentesque sagittis
+          Aliquam sed in odio.
+          Turpis blandit at interdum
+          Eget tempus nulla tempus arcu.
+        </p>
+      </div>
+    </div>
+    <div class="timelineContainer left">
+      <div class="content">
+        <h2 class="ff fw-600 fs-36 c-white ph-32-sm">Phase-3</h2>
+        <p class="ff fw-400 fs-18 fc-white">Massa pellentesque sagittis
+          Aliquam sed in odio.
+          Turpis blandit at interdum
+          Eget tempus nulla tempus arcu.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="timelineContainer right">
+    <div class="content">
+      <h2 class="ff fw-600 fs-36 c-white ph-32-sm">Phase-4</h2>
+      <p class="ff fw-400 fs-18 fc-white">Massa pellentesque sagittis
+        Aliquam sed in odio.
+        Turpis blandit at interdum
+        Eget tempus nulla tempus arcu.</p>
+    </div>
+  </div>
+
+table-responsive
+
+.timeline {
+    position: relative;
+    width: 100%;
+}
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+.timelineContainer {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+.timelineContainer::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -13px;
+    background: var(--gradient-v, linear-gradient(180deg, #FFA800 0%, #F06500 100%));
+    top: -3%;
+    border-radius: 50%;
+    z-index: 1;
+}
+.left {
+    left: 0;
+}
+
+.right {
+    left: 50%;
+}
+
+.right::after {
+    left: -13px;
+}
+
+
+
+ . col-12{
+    .timeline::after {
+        left: 31px;
+    }
+    
+    .timeline::after {
+        margin-left: -6px;
+    }
+    
+    .timelineContainer {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+    
+    .timelineContainer::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+    }
+    
+    .left::after,
+    .right::after {
+        left: 15px;
+    }
+    
+    .right {
+        left: 0%;
+    }
+  }
