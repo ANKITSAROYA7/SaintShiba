@@ -1,22 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 * {
-    padding: 0 !important;
-    margin: 0 !important;
-    box-sizing: border-box !important;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
     text-decoration: none !important;
-    list-style-type: none !important;
+    list-style-type: none;
+    transition: 260ms;
 
 }
 
-.container {
+/* .container {
     max-width: 1320px !important;
     margin-left: auto !important;
     margin-right: auto !important;
     padding-left: 12px !important;
     padding-right: 12px !important;
 
-}
+} */
 
 .font_color {
     color: #F06500;
@@ -24,10 +25,26 @@
 
 .connect_btn {
     display: inline-block;
-    padding: 7px 23px !important;
+    padding: 7px 23px;
     border-radius: 23.5px;
     background: var(--gradient-h, linear-gradient(90deg, #FFA800 0%, #F06500 100%));
+
 }
+
+.connect_btn2 {
+    display: inline-block;
+    padding: 12px 32px;
+    border-radius: 23.5px;
+    background: var(--gradient-h, linear-gradient(90deg, #FFA800 0%, #F06500 100%));
+
+}
+
+.connect_btn2:hover {
+    opacity: 0.5;
+}
+
+
+
 
 .connect_btn:hover {
     opacity: 0.5;
@@ -47,7 +64,7 @@
     color: black;
 }
 
-.text-box:hover{
+.text-box:hover {
     color: #ffff;
     background-color: #F06500;
 }
@@ -57,7 +74,8 @@
 }
 
 .nav_bg {
-    background-color: #070401;
+    background: rgba(0, 0, 0, 0.75);
+
 }
 
 .ff-poppins {
@@ -220,8 +238,12 @@
     font-size: 96px;
 }
 
+.text-justify {
+    text-align: justify;
+}
+
 .box {
-    transform: translateY(-86px);
+    transform: translateY(-44px);
     display: flex;
     max-width: 1320px;
     padding: 24px !important;
@@ -250,7 +272,7 @@
 
 .lm_btn {
     display: inline-block;
-    padding: 7px 23px !important;
+    padding: 7px 23px;
     align-items: flex-start;
     gap: 10px;
     border-radius: 23.5px;
@@ -258,13 +280,10 @@
 }
 
 
-.box_transition {
-    transform: translateY(-40%);
-}
-
 .bg_color {
     background-color: #1D1A1A;
 }
+
 
 
 .nav_bar {
@@ -278,6 +297,7 @@
     top: 0;
     left: -100%;
     z-index: 2;
+    transition: 250ms;
 }
 
 .show {
@@ -289,15 +309,22 @@
     transform: translateX(48.5px);
 }
 
+
+
+
 .overflow_hidden {
     overflow: hidden;
+}
+
+.box2:hover {
+    background: #0C0B0B;
 }
 
 .box2 {
     padding: 13px !important;
     flex-shrink: 0;
     border-radius: 46px;
-    background: #0C0B0B;
+    background: #151313;
 }
 
 .img-position {
@@ -340,9 +367,12 @@
 .colorbox {
     width: 50px;
     height: 50px;
+    flex-shrink: 0;
     border-radius: 4px;
     background: #00E396;
 }
+
+
 
 tbody,
 td,
@@ -357,6 +387,40 @@ tr {
 
 table thead tr th {
     background-color: #0C0B0B !important;
+}
+
+.table {
+    --bs-table-color-type: initial;
+    --bs-table-bg-type: initial;
+    --bs-table-color-state: initial;
+    --bs-table-bg-state: initial;
+    --bs-table-color: white !important;
+    --bs-table-bg: transparent !important;
+    --bs-table-border-color: var(--bs-border-color);
+    --bs-table-accent-bg: transparent;
+    --bs-table-striped-color: var(--bs-body-color);
+    --bs-table-striped-bg: rgba(0, 0, 0, 0.05);
+    --bs-table-active-color: var(--bs-body-color);
+    --bs-table-active-bg: rgba(0, 0, 0, 0.1);
+    --bs-table-hover-color: var(--bs-body-color);
+    --bs-table-hover-bg: rgba(0, 0, 0, 0.075);
+    width: 100%;
+    margin-bottom: 1rem;
+    vertical-align: top;
+    border-color: var(--bs-table-border-color);
+}
+
+table {
+    caption-side: bottom;
+    border-collapse: collapse;
+}
+
+.table>:not(caption)>*>* {
+    padding: 0.5rem 0.5rem;
+    color: var(--bs-table-color-state, var(--bs-table-color-type, var(--bs-table-color)));
+    background-color: #181717;
+    border-bottom-width: var(--bs-border-width);
+    box-shadow: inset 0 0 0 9999px var(--bs-table-bg-state, var(--bs-table-bg-type, var(--bs-table-accent-bg)));
 }
 
 .colorbox2 {
@@ -424,8 +488,20 @@ label[for="checkbox"]>span {
 }
 
 
+
+
 .padding-left {
-    padding-left: 77px !important;
+    padding-left: 41px !important;
+    padding-top: 83px !important;
+}
+
+
+.margin-bottom {
+    margin-bottom: -133px;
+}
+
+.w-120 {
+    width: 120%;
 }
 
 
@@ -434,7 +510,7 @@ label[for="checkbox"]>span {
 }
 
 .fs-text {
-    font-size: 21px;
+    font-size: 25;
 }
 
 .fs-p {
@@ -489,8 +565,6 @@ label[for="checkbox"]>span {
     width: 25px;
     height: 25px;
     right: -14px;
-
-
     top: 0;
     border-radius: 50%;
     z-index: 1;
@@ -518,65 +592,65 @@ label[for="checkbox"]>span {
 
 }
 
-.relative{
+.relative {
     position: relative;
 }
 
-.elipse-position{
+.elipse-position {
     position: absolute;
     top: 20%;
     left: 40%;
 }
 
-.elipse-position2{
+.elipse-position2 {
     position: absolute;
     top: 56%;
     left: 64%;
 }
 
-.elipse-position3{
+.elipse-position3 {
     position: absolute;
     top: 54%;
     left: 0%;
 }
 
-.elipse-position4{
+.elipse-position4 {
     position: absolute;
     top: 8%;
     right: 0%;
 }
 
-.elipse-position5{
+.elipse-position5 {
     position: absolute;
     top: 321%;
     left: 0%;
 }
 
-.elipse-position6{
+.elipse-position6 {
     position: absolute;
     top: 284%;
     right: 0%;
 }
 
-.elipse-position7{
+.elipse-position7 {
     position: absolute;
     top: 310%;
     right: 0%;
 }
 
-.z-5{
+.z-5 {
     z-index: 5;
 }
 
 
-.elipse-position8{
+.elipse-position8 {
     position: absolute;
     bottom: 0%;
     right: 0%;
 }
 
 
-.elipse-position9{
+.elipse-position9 {
     position: absolute;
     bottom: 0%;
     right: 0%;
@@ -593,7 +667,7 @@ label[for="checkbox"]>span {
 
 
 .content {
-    padding: 20px 30px !important;
+    padding: 0px 30px !important;
 
     position: relative;
     border-radius: 6px;
@@ -605,7 +679,7 @@ label[for="checkbox"]>span {
 
 .accordion-button:not(.collapsed)::after {
     background-image: url(../img/png/bx_bx-chevron-down.png);
-    
+
 }
 
 .accordion-button::after {
@@ -614,7 +688,7 @@ label[for="checkbox"]>span {
     height: var(--bs-accordion-btn-icon-width);
     margin-left: auto;
     content: "";
-    background-image:url( ../img/png/bx_bx-chevron-down.png);
+    background-image: url(../img/png/bx_bx-chevron-down.png);
     background-repeat: no-repeat;
     background-size: var(--bs-accordion-btn-icon-width);
     transition: var(--bs-accordion-btn-icon-transition);
@@ -749,15 +823,31 @@ label[for="checkbox"]>span {
 }
 
 .padding-bottom {
-    padding-bottom: 200px !important;
+    padding-bottom: 300px !important;
+}
+
+.mb-200 {
+    margin-bottom: -170px !important;
 }
 
 
-@media screen and (max-width: 768px) {
+.flex-end {
+    display: flex;
+    flex-direction: column;
+    align-items: end !important;
+}
+
+.t-end {
+    text-align: end;
+}
+
+
+
+@media (max-width: 768px) {
 
 
     .timeline::after {
-        left: 31px;
+        left: 28px;
     }
 
 
@@ -776,6 +866,8 @@ label[for="checkbox"]>span {
     }
 
 
+
+
     .left::after,
     .right::after {
         left: 15px;
@@ -784,6 +876,16 @@ label[for="checkbox"]>span {
 
     .right {
         left: 0%;
+    }
+
+    .flex-end {
+        display: flex;
+        flex-direction: column;
+        align-items: start !important;
+    }
+
+    .t-end {
+        text-align: start;
     }
 
 
@@ -806,17 +908,11 @@ label[for="checkbox"]>span {
     }
 }
 
+
+
 @media (min-width:768px) {
 
-    .flex-end {
-        display: flex;
-        flex-direction: column;
-        align-items: end !important;
-    }
-
-    .t-end {
-        text-align: end;
-    }
+    
 
     .rosdmap_para {
         max-width: 285px;
@@ -837,6 +933,8 @@ label[for="checkbox"]>span {
     .fs-md-36 {
         font-size: 36px;
     }
+
+
 
 
 }
@@ -870,24 +968,35 @@ label[for="checkbox"]>span {
         font-size: 18px;
     }
 
-
-    .fs-lg-96 {
-        font-size: 96px;
-    }
-
-
     .fs-lg-22 {
         font-size: 22px;
     }
 
     .img-position {
         position: absolute;
-        top: 5%;
-        right: -5px;
+        right: 0;
         width: 47%;
         overflow: hidden;
+        bottom: 58px;
+    }
+
+
+    .padding-left {
+        padding-left: 75px !important;
+        padding-top: 83px !important;
     }
 
 
 
+}
+
+
+@media (min-width:1200px) {
+    .fs-lg-96 {
+        font-size: 96px;
+    }
+
+    .fs-xlg-18{
+        font-size: 18px;
+    }
 }

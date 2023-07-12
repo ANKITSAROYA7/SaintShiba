@@ -1,6 +1,9 @@
 :root{
-    --font-weight-sm:400;
-    --font-weight-md:400;
-    --font-weight-lg:400;
-    --font-weight-xl:400;
+    --fs-sm:16px;
+    --fs-lg:24px;
+    --fs-xl:32px;
+}
+
+.fs-sm{
+    font-size: var(--fs-sm);
 }
